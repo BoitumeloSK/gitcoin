@@ -12,16 +12,13 @@ a{
     text-decoration: none;
     color: var(--main-text-color);
 }
-.signBtn, .siteBtn{
-    text-align: center;
-}
 i{
     color: black;
 }
 .learnMore{
     background-color: rgb(255, 230, 0);
     text-align: center;
-    height: 25px;
+    height: 5%;
     margin-bottom: 10px;
 }
 .learnMore p{
@@ -29,16 +26,27 @@ i{
     padding: 5px;
 }
 .siteBtn{
-    border: 2px solid;
+    border: 1px solid;
     border-color: var(--main-btn-color);
     border-radius: 20px;
     background-color: transparent;
     color: var(--main-btn-color);
     padding: 10px;
+    text-align: center;
 }
+.grantsBtn{
+    border: 1px solid;
+    border-color: black;
+    border-radius: 20px;
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
 section p{
     font-size: 20.8px;
-    line-height: 1.5em;
+    line-height: 24px;
 }
 /*NavBar*/
 .logo{
@@ -78,24 +86,32 @@ li{
     background-color: var(--main-white-color);
     color: var(--main-btn-color);
     padding: 10px;
+    text-align: center;
 }
 .signBtn:hover{
     background-color: var(--main-btn-color);
     color: var(--main-white-color);
 }
+.burger{
+    display: none;
+}
 .row1{
     display: flex;
     justify-content: center;
 }
-.column{
-    width: 75%;
+.column, #eyeAnim{
+    width: 75%; 
+}
+#eyeAnim{
+    display: flex;
+    align-items: flex-end;
 }
 .column1{
     padding: 25px;
     width: 25%;
 }
 .secOne p{
-    font-size: 1em;
+    font-size: 16px;
 }
 .secOne .row1{
     background-image: url("../images/topsecBg.jpg");
@@ -114,6 +130,24 @@ li{
     width: 40%;
     float: right;
     margin-right: 130px;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.topAnim{
+    width: 100%;
+}
+.topAnimCut{
+    display: none;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 /*Section Two*/
 .secTwo{
@@ -128,7 +162,10 @@ li{
     word-break: break-word;
 }
 .partners{
-    width: 40vw;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*Section Three*/
 .secThree{
@@ -137,24 +174,23 @@ li{
     color: var(--main-white-color);
 }
 .rocket{
-    width: 40vw;
+    width: 100%;
 }
 /*Section Four*/
 .secFour .row1{
     align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .secFour .signBtn{
-    border-radius: 4px;
     background-color: var(--main-btn-color);
     color: var(--main-white-color);
-    padding: 10px;
-}
-.secFour .column2{
-    width: 30vw;
 }
 input{
-    width: 22vw;
-    height: 5.8vh;
+    width: 50%;
+    height: 32px;
 }
 /*Section Five*/
 .secFive{
@@ -175,8 +211,8 @@ input{
 }
 #instructorPic{
     border-radius:100%;
-    width: 5vw;
-    height: 5vw;
+    width: 7.5vw;
+    height: 7.5vw;
 }
 .profileDetails{
     display: flex;
@@ -185,29 +221,58 @@ input{
 }
 /*Footer*/
 .foot{
-    padding: 25px;
-    padding-top: 10px;
+    padding: 10px 0px 10px 25px;
+    width: 100%;
 }
 footer .logo{
-    margin-top: 60px;
     float:unset;
+    width: 30%;
+}
+#sourceLanguages{
+    width: 40%;
+    padding: 2% 0 0 6%;
+}
+#terms{
+    width: 60%;
+    padding: 25px 0;
+}
+#socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 25px;
 }
 footer i{
-    font-size: 1em;
+    padding: 5px;
+}
+.circle{
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 15px;
 }
 @media only screen and (max-width:600px){
-    div{
+    .column, .column1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    } 
+    .row1, .row2{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .column2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .secOne p, section p, span, a, .learnMore p{
+        font-size: 12px;
     }
-    p, section p{
-        font-size: 8px;
+    h1{
+        font-size: 18px;
+    }
+    .bottomAnim{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     .row1, .row2{
         align-items: center;
@@ -215,9 +280,71 @@ footer i{
     .column1{
         width: unset;
     }
-    .column2{
-        width: unset;
+    .secFive .column2{
+        width: 80%;
+    }
+    .column2, #sourceLanguages, #terms{
+        width: 90%;
+    }
+    #sourceLanguages, #terms p{
+        font-size: 8px;
+    }
+    .secTwo{
+        padding: 0;
+    }
+    #subscription{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-top: 0;
+        align-items: flex-start;
+        padding-top: 0;
+    }
+    .text{
+        width: 98%;
+        margin-bottom: 10px;
+    }
+    .row{
+        margin-left: 0;
+    }
+    footer .logo{
+        margin-top: 0;
+        width: 30%;
+    }
+    h2{
+        font-size: 10px;
+    }
+    #siteNav{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .foot{
+        padding-left:10px;
+    }
+    #socials{
+        margin-left: 0;
+    }
+    .rocket{
+        display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    .topAnim{
+        display: none;
+    }
+    .topAnimCut{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width:902px){
+    .burger{
+        display: block;
+    }
+    .navItems, .float{
+        display: none;
     }
 }

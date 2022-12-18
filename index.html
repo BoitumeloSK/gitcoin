@@ -32,16 +32,16 @@
                 class="logo"
               />
             </div>
-            <div>
+            <div class="navItems">
               <ul class="row1">
                 <li>
-                  <a href="">Products <i class="fa fa-chevron-down"></i></a>
+                  <a href="#secTwo">Products <i class="fa fa-chevron-down"></i></a>
                 </li>
                 <li>
-                  <a href="">Community <i class="fa fa-chevron-down"></i></a>
+                  <a href="#secThree">Community <i class="fa fa-chevron-down"></i></a>
                 </li>
                 <li>
-                  <a href="">Organization <i class="fa fa-chevron-down"></i></a>
+                  <a href="#secFive">Organization <i class="fa fa-chevron-down"></i></a>
                 </li>
               </ul>
             </div>
@@ -52,6 +52,7 @@
                 ><i class="fa fa-github"></i> &nbsp; Sign in</a
               >
             </div>
+            <span class="burger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
           </nav>
         </div>
       </div>
@@ -69,8 +70,9 @@
             </p>
             <a href="" type="btn" class="siteBtn">EXPLORE GRANT PROTOCOL</a>
           </div>
-          <div class="column">
-            <img src="assets/images/circleAnim.svg" />
+          <div class="column" id="eyeAnim">
+            <img src="assets/images/circleAnim.svg" class="topAnim"/>
+            <img src="assets/images/topAnimCut.png" class="topAnimCut"/>
           </div>
         </div>
         <div class="row2">
@@ -84,14 +86,14 @@
               capabilities, and will continue its mission to support public
               goods.
             </p>
-            <a href="" type="btn" class="siteBtn">SEE GITCOIN GRANTS</a>
+            <a href="" type="btn" class="grantsBtn">SEE GITCOIN GRANTS</a>
           </div>
         </div>
       </div>
     </section>
     <!--End of Section 1-->
     <!--Section 2-->
-    <section class="secTwo">
+    <section class="secTwo" id="secTwo">
       <div class="container">
         <div class="row1">
           <div class="column2">
@@ -109,7 +111,7 @@
     </section>
     <!--End of Section 2-->
     <!--Section 3-->
-    <section class="secThree">
+    <section class="secThree" id="secThree">
       <div class="container">
         <div class="row1">
           <div class="column2">
@@ -153,8 +155,8 @@
             <h1>Get the latest from Gitcoin</h1>
             <p>Share your email to receive guides and industry news.</p>
           </div>
-          <div class="column2">
-            <input type="text" />
+          <div class="column2" id="subscription">
+            <input type="text" class="text"/>
             <a href="" type="btn" class="signBtn">Subscribe</a>
           </div>
         </div>
@@ -162,7 +164,7 @@
     </section>
     <!--End of Section 4-->
     <!--Section 5-->
-    <section class="secFive">
+    <section class="secFive" id="secFive">
       <div class="container">
         <div class="row">
           <h1>Who's using Gitcoin?</h1>
@@ -302,7 +304,7 @@
     <footer>
       <div class="container">
         <div class="row1">
-          <div class="column2">
+          <div class="column2" id="sourceLanguages">
             <img src="assets/images/logo.png" class="logo" />
             <br />
             <p>
@@ -311,16 +313,16 @@
               Design, and more.
             </p>
           </div>
-          <div class="column2">
-            <div class="row1">
-              <i class="fa fa-blog"></i>
-              <i class="fa fa-github"></i>
-              <i class="fa fa-twitter"></i>
-              <i class="fa fa-reddit"></i>
-              <i class="fa fa-discord"></i>
-              <i class="fa fa-envelope"></i>
+          <div class="column2" id="terms">
+            <div class="row1" id="socials">
+              <div class="circle"><i class="fa fa-rss"></i></div>
+              <div class="circle"><i class="fa fa-github"></i></div>
+              <div class="circle"><i class="fa fa-twitter"></i></div>
+              <div class="circle"><i class="fa fa-reddit"></i></div>
+              <div class="circle"><i class="fa fa-telegram"></i></div>
+              <div class="circle"><i class="fa fa-envelope"></i></div>
             </div>
-            <div class="row1">
+            <div class="row1" id="siteNav">
               <div class="foot">
                 <h2>Product</h2>
                 <p>Grants</p>
