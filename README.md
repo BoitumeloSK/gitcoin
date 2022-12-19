@@ -9,7 +9,7 @@ This is a project is a clone of the **[Gitcoin.co](https://gitcoin.co/)** websit
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contribution](#contribution)
+- [Credits](#credits)
 
 ## Installation
 
