@@ -8,8 +8,8 @@ This is a project is a clone of the **[Gitcoin.co](https://gitcoin.co/)** websit
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- License(#license)
-- Contribution(#contribution)
+- [License](#license)
+- [Contribution](#contribution)
 
 ## Installation
 
