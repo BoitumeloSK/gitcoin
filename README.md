@@ -16,7 +16,7 @@ This is a project is a clone of the **[Gitcoin.co](https://gitcoin.co/)** websit
 To access and view the website you have to clone this repository using: 
 
 ```shell
-git clone <clone url>
+git clone https://github.com/BoitumeloSK/GitCoin.git
 ```
 
 ## Usage
